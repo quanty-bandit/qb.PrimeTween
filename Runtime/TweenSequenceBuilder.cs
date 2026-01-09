@@ -10,6 +10,10 @@ using qb.Events;
 
 namespace qb.PrimeTween
 {
+    /// <summary>
+    /// Component for building and controlling forward and backward tween animation sequences, supporting play, stop,
+    /// toggle, and reset operations with event integration.
+    /// </summary>
     [AddComponentMenu("qb/Animation/TweenSequenceBuilder")]
     [DeclareFoldoutGroup("#0", Title = "Global tween settingsContainer",Expanded =true)]
     [DeclareTabGroup("#1")]

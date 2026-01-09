@@ -7,6 +7,10 @@ using static qb.PrimeTween.TweenSequenceBuilder;
 using qb.Events;
 namespace qb.PrimeTween
 {
+    /// <summary>
+    /// Represents an entry in a tween sequence, encapsulating tween parameters, target type, sequence mode, timing, and
+    /// associated start and complete events.
+    /// </summary>
     [DeclareTabGroup("#1")]
     [Serializable]
     public class TweenSequenceEntry: ITweenGetter
