@@ -8,7 +8,7 @@
 	"com.codewriter.triinspector": "https://github.com/codewriter-packages/Tri-Inspector.git",
     "com.kyrylokuzyk.primetween": "file:../Assets/Plugins/PrimeTween/internal/com.kyrylokuzyk.primetween.tgz",
     "com.quanty-bandit.pattern": "https://github.com/quanty-bandit/qb.Pattern.git",
-    "com.quanty-bandit.events": "https://github.com/quanty-bandit/qb.Events.git",
+    "com.quanty-bandit.events": "https://github.com/quanty-bandit/qb.Events.git"
   },
   "keywords": [
     "Ui components",
