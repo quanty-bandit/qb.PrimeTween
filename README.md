@@ -15,7 +15,8 @@ Use the Unity package manager and the Install package from git url option.
 - Install at first time,if you haven't already done so previously, the package <mark>[unity-package-manager-utilities](https://github.com/sandolkakos/unity-package-manager-utilities.git)</mark> from the following url: 
   [GitHub - sandolkakos/unity-package-manager-utilities: That package contains a utility that makes it possible to resolve Git Dependencies inside custom packages installed in your Unity project via UPM - Unity Package Manager.](https://github.com/sandolkakos/unity-package-manager-utilities.git)
 
-- Next, install the package from the current package git URL. 
+- Next, install the PrimeTween package from: https://github.com/KyryloKuzyk/PrimeTween.git
+- Finaly, install the package from the current package git URL. 
   
   All other dependencies of the package should be installed automatically.
 
