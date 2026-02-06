@@ -1,11 +1,12 @@
 {
   "name": "com.quanty-bandit.primetween",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "qb.PrimeTween",
   "description": "Components for webservices connection",
   "unity": "6000.2",
   "gitDependencies": {
 	"com.codewriter.triinspector": "https://github.com/codewriter-packages/Tri-Inspector.git",
+    "com.quanty-bandit.utility": "https://github.com/quanty-bandit/qb.Utility.git",
     "com.quanty-bandit.pattern": "https://github.com/quanty-bandit/qb.Pattern.git",
     "com.quanty-bandit.events": "https://github.com/quanty-bandit/qb.Events.git"
   },
