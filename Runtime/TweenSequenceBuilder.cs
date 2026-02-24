@@ -2,7 +2,6 @@
 using PrimeTween;
 using TriInspector;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
 using System;
@@ -178,11 +177,11 @@ namespace qb.PrimeTween
 #endif
         
         [Button(ButtonSizes.Large, "Play              ▶"), Tooltip("PLAY FORWARDS"), Group("#99")]
-        public async Task<bool> Play()
+        public async Awaitable<bool> Play()
         {
             return await Play(isInfinitePlayLoop ? -1 : cycles);
         }
-        public async Task<bool> Play(int cycles)
+        public async Awaitable<bool> Play(int cycles)
         {
             if (cycles < -1 || cycles==0 || forwardSequence.Count == 0 || !isActiveAndEnabled) return false;
 
@@ -220,12 +219,12 @@ namespace qb.PrimeTween
         [EnableIf(nameof(ShowBackwardButton))]
 #endif
         [Button(ButtonSizes.Large, "Backwards   ◀"), Tooltip("PLAY BACKWARDS"), Group("#99")]
-        public async Task<bool> PlayBackwards()
+        public async Awaitable<bool> PlayBackwards()
         {
             return await PlayBackwards(cycles);
         }
 
-        public async Task<bool> PlayBackwards(int cycles) 
+        public async Awaitable<bool> PlayBackwards(int cycles) 
         {
             if (cycles < -1 || cycles == 0 || backwardSequence.Count == 0 || !isActiveAndEnabled) return false;
             if (sequence.isAlive)
@@ -263,12 +262,12 @@ namespace qb.PrimeTween
         [EnableIf(nameof(ShowToggleButton))]
 #endif
         [Button(ButtonSizes.Large, "Toggle         ↔"),Tooltip("TOOGLE PLAY DIRECTION"), Group("#99")]
-        public async Task<bool> TogglePlay()
+        public async Awaitable<bool> TogglePlay()
         {
             return await TogglePlay(cycles);
         }
 
-        public async Task<bool> TogglePlay(int cycles)
+        public async Awaitable<bool> TogglePlay(int cycles)
         {
             if (lastPlayIsForward)
                 return await PlayBackwards(cycles);
@@ -325,10 +324,6 @@ namespace qb.PrimeTween
                 entry.Initialize(force);
             isInitialized = true;
         }
-
-
-
-
 
         public async void PlayAsync(int cycles)
         {
